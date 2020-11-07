@@ -15,23 +15,59 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/5d8bdd0571.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5d8bdd0571.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
       <a href="/" class="navbar-brand"> Whiskey Drop</a>
-      <ul class="navbar-nav mr-auto">
-        <li class="active nav-item mr-2">
-          <a href="/" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item mr-2">
-          <a href="/bout" class="nav-link">About</a>
-        </li>
-        <li class="nav-item mr-2 d-block d-sm-none">
-          <a href="/Login" class="nav-link">Sign In/ Sign Up</a>
-        </li>
-      </ul>
+
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="active nav-item mr-2">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item mr-2">
+            <a href="/about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item drpdown"></li>
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Whiskeys
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Irish</a>
+            <a class="dropdown-item" href="#">Scotch</a>
+            <a class="dropdown-item" href="#">Japanese</a>
+            <a class="dropdown-item" href="#">American</a>
+          </div>
+
+          <li class="nav-item mr-2 d-block d-sm-none">
+            <a href="/Login" class="nav-link">Sign In/ Sign Up</a>
+          </li>
+        </ul>
+      </div>
       <div class="d-none d-md-block">
         <p class="navbar-text my-auto mr-2">
           <i>Great whiskey delivered to your door!</i>
@@ -41,15 +77,15 @@
     </nav>
 
     <article class="container mt-3">
-    <div class="row d-none d-sm-block">
-     <div class="col-12">
-        <div class="alert alert-warning">
-            <strong>Sale is Now On!</strong> We got a sale on. Get 12- supscrption for the price of 6!
-             <a href="">See here details!</a>
-    
+      <div class="row d-none d-sm-block">
+        <div class="col-12">
+          <div class="alert alert-warning">
+            <strong>Sale is Now On!</strong> We got a sale on. Get 12-
+            supscrption for the price of 6!
+            <a href="">See here details!</a>
+          </div>
         </div>
-     </div>
-    </div>
+      </div>
       <!-- Callout -->
       <div class="row">
         <div class="col-12">
@@ -86,13 +122,13 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <div class="media">
-             <div class="d-none d-sm-block">
-              <img
-                src="images/girl-image.png"
-                class="rounded-circle mr-3"
-                height="100"
-                width="100"
-              />
+              <div class="d-none d-sm-block">
+                <img
+                  src="images/girl-image.png"
+                  class="rounded-circle mr-3"
+                  height="100"
+                  width="100"
+                />
               </div>
               <div class="media-body">
                 <blockquote class="blockquote">
@@ -100,25 +136,25 @@
                     I've been introduced to more than 10 great international
                     whiskeys
                   </p>
-                  <p> -Jane Doe</p>
+                  <p>-Jane Doe</p>
                 </blockquote>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6">
             <div class="media">
-            <div class="d-none d-sm-block">
-              <img
-                src="images/guy-image.png"
-                class="rounded-circle mr-3"
-                height="100"
-                width="100"
-              />
-            </div>
+              <div class="d-none d-sm-block">
+                <img
+                  src="images/guy-image.png"
+                  class="rounded-circle mr-3"
+                  height="100"
+                  width="100"
+                />
+              </div>
               <div class="media-body">
                 <blockquote class="blockquote">
                   <p>I haven't been sover for months!</p>
-                  <p> -John Day</p>
+                  <p>-John Day</p>
                 </blockquote>
               </div>
             </div>
@@ -128,7 +164,7 @@
 
       <!-- /Quotes -->
 
-      <hr>
+      <hr />
 
       <!-- Features -->
       <section class="features">
@@ -140,7 +176,10 @@
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4">
             <div class="feature">
-              <h3> <i class="fas fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success"> NEW!</span></h3>
+              <h3>
+                <i class="fas fa-gift d-none d-sm-inline"></i> Feature 1
+                <span class="badge badge-success"> NEW!</span>
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -152,7 +191,9 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <div class="feature">
-              <h3> <i class="far fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
+              <h3>
+                <i class="far fa-credit-card d-none d-sm-inline"></i> Feature 2
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -164,7 +205,9 @@
           </div>
           <div class="col-12 d-md-none d-lg-block col-lg-4">
             <div class="feature">
-              <h3> <i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
+              <h3>
+                <i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -178,5 +221,20 @@
       </section>
       <!-- /Features -->
     </article>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
